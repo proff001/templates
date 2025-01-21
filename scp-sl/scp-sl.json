@@ -1,6 +1,5 @@
 {
     "type": "srcds",
-    "name": "scp-sl",
     "display": "SCP: Secret Laboratory",
     "data": {
         "port": {
@@ -27,7 +26,8 @@
         }
     ],
     "run": {
-        "command": "./RunServer.sh",
+        "command": "./LocalAdmin ${port}",
+        "stop": "exit",
         "stdin": {
             "type": "stdin"
         },
@@ -50,5 +50,12 @@
     "requirements": {
         "os": "linux",
         "arch": "amd64"
-    }
+    },
+    "stats": {
+        "type": ""
+    },
+    "query": {
+        "type": ""
+    },
+    "name": "scp-sl"
 }
